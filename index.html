@@ -5,36 +5,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/output.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="42x42" href="/images/favicon.jpg">
 
     <title>Pastelão</title>
 </head>
 
 <body>
-    <script>
-
-    </script>
 
     <header class="w-full  h-[420px] bg-zinc-500 bg-fundo-inicio bg-cover bg-center ">
 
-        <div class="flex flex-col items-center justify-center  w-full h-full ">
+        <div class="flex flex-col items-center justify-center w-full h-full ">
 
             <img src="/images/Pastelão.jpg" alt="Pastelão"
-                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
+                class="foto-perfil rounded-full shadow-lg hover:scale-110 transition-transform duration-300 mb-4">
 
-            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
-                Pastelão
-            </h1>
-            <p class="text-lg text-white ">
+            <p class="text-lg text-black font-semibold">
                 Rua das Flores, 123 - Centro, Itajai - SC
             </p>
             <div class="bg-green-500 px-4 py-2 rounded-lg mt-4" id="horario">
-                <span class="text-white font-semibold">
+                <span class="text-black font-semibold">
                     Ter á Dom - 18:00 até 00:00
                 </span>
             </div>
         </div>
     </header>
+
+
+    <div>
+        <h2 class=" text-2xl md:text-4xl text-center font-bold mt-8 mb-4 text-black">
+            Conheça nosso cardápio
+        </h2>
+    </div>
+
+    <div id="menu" class="p-4 mx-auto">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+
+            <!-- Pastel de Carne -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/pastel-carne.jpg" alt="Pastel de Carne">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Pastel de Carne</p>
+                    <p class="text-sm text-gray-600">Massa crocante recheada com carne bovina temperada, suculenta e
+                        cheia de sabor. Um clássico irresistível!</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 17.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Pastel de Carne" data-price="17.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastel de Carne Seca -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/carne-seca.jpg" alt="Pastel de Carne Seca">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Pastel de Carne Seca</p>
+                    <p class="text-sm text-gray-600">Carne seca desfiada com queijo derretido, temperada com um toque
+                        especial. Sabor nordestino em cada mordida!</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 22.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Pastel de Carne Seca" data-price="22.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastel de Frango com Catupiry -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/frango-catupiry.jpg"
+                    alt="Pastel de Frango com Catupiry">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Pastel de Frango com Catupiry</p>
+                    <p class="text-sm text-gray-600">Frango desfiado temperado com ervas e combinado com catupiry
+                        cremoso. Um dos mais pedidos!</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 18.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Pastel de Frango com Catupiry" data-price="18.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastel de Frango com Milho e Catupiry -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/frango-milho-catupiry.jpg"
+                    alt="Pastel de Frango com Milho e Catupiry">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Pastel de Frango com Milho e Catupiry</p>
+                    <p class="text-sm text-gray-600">Frango desfiado com milho, temperado e cremoso com catupiry. Uma
+                        combinação perfeita e equilibrada!</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 18.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Pastel de Frango com Milho e Catupiry" data-price="18.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastel de Pizza -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/portuesa.jpg" alt="Pastel de Pizza">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Pastel de Pizza</p>
+                    <p class="text-sm text-gray-600">Presunto, queijo muçarela, orégano e molho especial. Tudo o que
+                        você ama em uma pizza, agora no pastel.</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 17.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Pastel de Pizza" data-price="17.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastel Frango Desfiado -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/Pastel-frango-desfiado.jpg"
+                    alt="Pastel Frango Desfiado">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Pastel Frango Desfiado</p>
+                    <p class="text-sm text-gray-600">Frango desfiado com tempero caseiro, cremoso e leve. Perfeito para
+                        quem busca sabor e leveza!</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 17.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Pastel Frango Desfiado" data-price="17.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastel de Chocolate com Banana -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/chocolate.jpg"
+                    alt="Pastel de Chocolate com Banana">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Pastel de Chocolate com Banana</p>
+                    <p class="text-sm text-gray-600">Banana madura com chocolate meio amargo derretido. Uma combinação
+                        doce e deliciosa!</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 16.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Pastel de Chocolate com Banana" data-price="16.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batata Bacon e Queijo -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/batata-bacon-queijo.jpg"
+                    alt="Batata Bacon e Queijo">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Batata Bacon e Queijo</p>
+                    <p class="text-sm text-gray-600">Batata frita crocante coberta com queijo derretido e pedaços
+                        generosos de bacon.</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 16.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Batata Bacon e Queijo" data-price="16.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coca Cola 350ml -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/coca-cola.jpg" alt="Coca Cola 350ml">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Coca Cola 350ml</p>
+                    <p class="text-sm text-gray-600">Clássica e gelada, perfeita para acompanhar seu pastel com muito
+                        mais sabor.</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 7.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Coca Cola 350ml" data-price="7.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coca Cola Velvet -->
+            <div class="flex flex-row gap-4 items-center bg-white shadow-md p-4 rounded-md ">
+                <img class="image-cardapio flex-shrink-0" src="./images/coca-velvet.jpg" alt="Coca Cola Velvet">
+                <div class="flex flex-col justify-between flex-1 min-w-[200px]">
+                    <p class="font-bold text-lg">Coca Cola Velvet</p>
+                    <p class="text-sm text-gray-600">Sabor suave com toque sofisticado. A nova sensação para acompanhar
+                        suas refeições.</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <p class="font-bold text-lg text-black">R$ 8.90</p>
+                        <button class="bg-gray-900 px-4 py-2 rounded hover:bg-gray-800 transition add-carinho"
+                            data-name="Coca Cola Velvet" data-price="8.90">
+                            <i class="fa fa-cart-plus text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+    </div>
 
 </body>
 
