@@ -902,10 +902,6 @@ video {
   min-width: 200px;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2693,18 +2689,6 @@ video {
 }
 
 @media (min-width: 641px) {
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:max-w-5xl {
-    max-width: 64rem;
-  }
-
-  .sm\:items-center {
-    align-items: center;
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
